@@ -12,6 +12,11 @@ fit_mlr <- lm(FlyawayCost ~ Thrust + Climb + MTOW, data = df)
 # print the summary of the regression model
 print(summary(fit_mlr))
 
+# summary of 2nd regression model (thrust and FFD only)
+fit_mlr2 <- lm(FlyawayCost ~ Thrust + FFD, data = df)
+print(summary(fit_mlr2))
+
+
 res <- resid(fit_mlr)
 plot(fitted(fit_mlr), res, main = "Residual Plot for Multiple Linear Regression",
      xlab = "Fitted", ylab = "Residual")
