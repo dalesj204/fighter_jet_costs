@@ -20,5 +20,5 @@ abline(0,0) # horizontal line at (0,0)
 qqnorm(res) # make a Q-Q plot
 qqline(res) # add diagonal line
 
-plot(density(res)) # density plot to verify ~N
+plot(density(res), main="Density Plot") # density plot to verify ~N
 
