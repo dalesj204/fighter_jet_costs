@@ -1,6 +1,7 @@
 setwd("/Users/jordan.Mac/Desktop/college/clarkson/fall23/stats_project") # change this
 cat("\f") # clean console
 rm(list = ls()) # clean environment
+dev.off() # clean previous plots
 
 # read the data
 df <- read.csv("fighterjetcosts.csv")
